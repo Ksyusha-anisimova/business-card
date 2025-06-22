@@ -9,6 +9,7 @@
 
 # VSCode
 *.tsbuildinfo
+.vscode/                        # [добавлено]
 
 # Android studio
 .gradle/
@@ -68,6 +69,8 @@ pids
 node_modules
 flow-typed
 jspm_packages
+.cache/                         # [добавлено]
+webpack.cache/                 # [добавлено]
 
 # Optional npm cache directory
 .npm
@@ -77,6 +80,7 @@ jspm_packages
 
 # Build generated
 build/
+dist/                          # [добавлено]
 DerivedData/
 
 # OSX
