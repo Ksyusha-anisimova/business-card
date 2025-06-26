@@ -9,15 +9,15 @@ import GalleryClient from '../ClientSection/ClientSection';
 import Footer from '../Footer/Footer';
 
 export default function App() {
-  return (
-    <>
-      <Navigation />
-      <Header />
-      <GalleryLogo />
-      <GalleryCard />
-      <GalleryWork />
-      <GalleryClient />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Navigation />
+            <Header />
+            <GalleryLogo />
+            <GalleryCard />
+            <GalleryWork />
+            <GalleryClient />
+            <Footer />
+        </>
+    );
 }
