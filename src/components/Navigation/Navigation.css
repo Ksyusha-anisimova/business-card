@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+.navigation__list{
+    margin: 26px 50px;
+}

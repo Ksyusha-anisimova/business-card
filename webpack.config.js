@@ -25,13 +25,18 @@ export default {
   module: {
     rules: [
       {
-        // Babel для TS, JS, JSX, TSX
+        // Babel для .ts, .tsx, .js, .jsx
         test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         use: 'babel-loader',
       },
       {
-        // Чтобы webpack понимал HTML (если будешь импортировать .html как модули)
+        // CSS-файлы обрабатываются отдельно
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        // HTML loader (если используешь шаблон index.html)
         test: /\.html$/,
         use: 'html-loader',
       },
