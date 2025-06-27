@@ -1,0 +1,7 @@
+.gallery_logo__list{
+    display: flex;
+    padding: 60px 100px;
+    justify-content:space-between ;
+    /*background-color: olivedrab;*/
+    border: 0.5px solid gray;
+}

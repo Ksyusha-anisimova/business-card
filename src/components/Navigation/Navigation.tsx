@@ -4,9 +4,11 @@ import './Navigation.css';
 export default function Navigation() {
   return (
     <nav className="navigation__list">
-      <a href="#">Logo</a>
+      <a href="#" className="navigation_logo">
+        Logo
+      </a>
 
-      <div>
+      <div className="navigation_link">
         <a href="#">About</a>
         <a href="#">Work</a>
         <a href="#">Contact</a>

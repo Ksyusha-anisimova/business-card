@@ -1,0 +1,7 @@
+.skillCard-gallery{
+    display: flex;
+    padding: 180px 140px;
+}
+.skillCard_img{
+    text-align: center;
+}

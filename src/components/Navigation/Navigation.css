@@ -1,8 +1,27 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: aquamarine;
 }
 .navigation__list{
-    margin: 26px 50px;
+    /*background-color: pink;*/
+    display: flex;
+    flex-direction: row;
+    padding: 26px 50px;
+    justify-content: space-between;
+
+}
+
+.navigation_link{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 17px;
+}
+
+.navigation_logo{
+    font-weight: bold;
+    font-size: 20px;
+}
+.navigation__list a{
+    text-decoration: none;
 }
