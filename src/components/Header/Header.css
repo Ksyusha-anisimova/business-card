@@ -1,4 +1,4 @@
-.hero_image{
+.hero__image{
     display: flex;
     padding: 100px;
     gap: 10px;
@@ -6,15 +6,15 @@
     /*background-color: khaki;*/
 
 }
-.header_image img{
+.header__image img{
     height: 424px;
 }
-.header_text{
+.header__text{
     align-items: center;
 }
 .text{
     font-size: 17px;
 }
-.main_text{
+.main__text{
     font-size: 80px;
 }

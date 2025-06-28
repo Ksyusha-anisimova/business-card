@@ -1,7 +1,7 @@
-.skillCard-gallery{
+.skill_card-gallery{
     display: flex;
     padding: 180px 140px;
 }
-.skillCard_img{
+.skill_card__img{
     text-align: center;
 }

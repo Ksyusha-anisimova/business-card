@@ -6,11 +6,11 @@ import GalleryCard from '../Card/Card';
 
 export default function App() {
   return (
-    <div>
+    <>
       <Navigation />
       <Header />
       <GalleryLogo />
       <GalleryCard />
-    </div>
+    </>
   );
 }
