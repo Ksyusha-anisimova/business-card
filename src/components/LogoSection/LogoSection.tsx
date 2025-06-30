@@ -6,11 +6,11 @@ import Awwwards from '../../images/Awwwards.jpg';
 import Dribbble from '../../images/Dribbble.jpg';
 import Google from '../../images/Google.jpg';
 
-type CardProps = {
+type LogoCardProps = {
   imageUrl: string;
 };
 
-function CardLogo({ imageUrl }: CardProps) {
+function CardLogo({ imageUrl }: LogoCardProps) {
   return (
     <div className="card_logo__image">
       <img src={imageUrl} alt="" />

@@ -1,0 +1,11 @@
+.work_section-gallery {
+  display: flex;
+}
+.work_card__titel {
+  font-weight: 600;
+  font-size: 20px;
+}
+.work_card__discription {
+  font-size: 16px;
+  font-weight: 400;
+}
