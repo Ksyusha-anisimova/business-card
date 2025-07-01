@@ -1,5 +1,6 @@
 .work_section-gallery {
   display: flex;
+  gap: 68px;
 }
 .work_card__titel {
   font-weight: 600;

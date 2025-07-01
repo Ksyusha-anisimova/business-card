@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import GalleryLogo from '../LogoSection/LogoSection';
 import GalleryCard from '../Card/Card';
 import GalleryWork from '../WorkSection/WorkSection';
+import GalleryClient from '../ClientSection/ClientSection';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <GalleryLogo />
       <GalleryCard />
       <GalleryWork />
+      <GalleryClient />
     </>
   );
 }
