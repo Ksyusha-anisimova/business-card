@@ -5,6 +5,7 @@ import GalleryLogo from '../LogoSection/LogoSection';
 import GalleryCard from '../Card/Card';
 import GalleryWork from '../WorkSection/WorkSection';
 import GalleryClient from '../ClientSection/ClientSection';
+import Footer from '../Footer/Footer';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <GalleryCard />
       <GalleryWork />
       <GalleryClient />
+      <Footer />
     </>
   );
 }
