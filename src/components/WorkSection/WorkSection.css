@@ -1,6 +1,9 @@
 .work_section-gallery {
   display: flex;
-  gap: 68px;
+  /*gap: 68px;*/
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 122px 100px 20px 100px;
 }
 .work_card__titel {
   font-weight: 600;
@@ -9,4 +12,7 @@
 .work_card__discription {
   font-size: 16px;
   font-weight: 400;
+}
+.work_card {
+  padding-bottom: 60px;
 }

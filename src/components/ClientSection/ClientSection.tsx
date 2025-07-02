@@ -13,6 +13,7 @@ type ClientInfoProps = {
   discription: string;
   text: string;
 };
+
 const ClientInfo: ClientInfoProps[] = [
   {
     star: 4,
@@ -36,6 +37,7 @@ const ClientInfo: ClientInfoProps[] = [
     text: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
   },
 ];
+
 function ClientInfoCard({
   star,
   starUrl,
@@ -50,6 +52,7 @@ function ClientInfoCard({
       <div>
         <div>
           <p>{star}</p>
+
           <img src={starUrl} alt="" />
           {/*решить вопрос с циклом для звезд*/}
         </div>

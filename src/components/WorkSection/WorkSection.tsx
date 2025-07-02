@@ -61,10 +61,13 @@ function WorkCard({ imageUrl, titel, discription }: WorkCardProps) {
 
 export default function GalleryWork() {
   return (
-    <div className="work_section-gallery">
-      {WorkCardInfo.map((card, index) => (
-        <WorkCard key={index} {...card} />
-      ))}
+    <div>
+      <span>My latest work</span>
+      <div className="work_section-gallery">
+        {WorkCardInfo.map((card, index) => (
+          <WorkCard key={index} {...card} />
+        ))}
+      </div>
     </div>
   );
 }
