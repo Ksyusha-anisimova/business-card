@@ -45,7 +45,7 @@ function Card({ imageUrl, title, discription }: CardProps) {
 
 export default function GalleryCard() {
   return (
-    <div className="skill_card-gallery">
+    <div className="skill_card-gallery" id="about">
       {CardInfo.map((card, index) => (
         <Card key={index} {...card} />
       ))}

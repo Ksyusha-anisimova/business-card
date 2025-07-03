@@ -49,7 +49,7 @@ function TextField({ name, height, type }: TextFieldProps) {
 export default function Footer() {
   return (
     <>
-      <div className="footer">
+      <div className="footer" id="contact">
         <div>
           <div className="footer__text">
             <p>Let’s work together</p>

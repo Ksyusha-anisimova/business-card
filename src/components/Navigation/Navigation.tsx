@@ -9,9 +9,9 @@ export default function Navigation() {
       </a>
 
       <div className="navigation_link">
-        <a href="#">About</a>
-        <a href="#">Work</a>
-        <a href="#">Contact</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
   );
