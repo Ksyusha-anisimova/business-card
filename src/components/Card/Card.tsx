@@ -1,8 +1,8 @@
 import React from 'react';
 import './Card.css';
-import PlaceHolder from '../../images/Image_placeholder.jpg';
-import PlaceHolder1 from '../../images/Image_placeholder_1.jpg';
-import PlaceHolder2 from '../../images/Image_placeholder_2.jpg';
+import placeHolder1 from '../../images/Image_placeholder.jpg';
+import placeHolder2 from '../../images/Image_placeholder_1.jpg';
+import placeHolder3 from '../../images/Image_placeholder_2.jpg';
 
 type CardProps = {
   imageUrl: string;
@@ -10,21 +10,21 @@ type CardProps = {
   discription: string;
 };
 
-const CardInfo: CardProps[] = [
+const cardInfo: CardProps[] = [
   {
-    imageUrl: PlaceHolder1,
+    imageUrl: placeHolder2,
     title: 'Product design',
     discription:
       'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
   },
   {
-    imageUrl: PlaceHolder2,
+    imageUrl: placeHolder3,
     title: 'Art direction',
     discription:
       'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
   },
   {
-    imageUrl: PlaceHolder,
+    imageUrl: placeHolder1,
     title: 'Visual design',
     discription:
       'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
@@ -46,7 +46,7 @@ function Card({ imageUrl, title, discription }: CardProps) {
 export default function GalleryCard() {
   return (
     <div className="skill_card-gallery" id="about">
-      {CardInfo.map((card, index) => (
+      {cardInfo.map((card, index) => (
         <Card key={index} {...card} />
       ))}
     </div>

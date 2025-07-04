@@ -1,6 +1,5 @@
 .work_section-gallery {
   display: flex;
-  /*gap: 68px;*/
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 122px 100px 20px 100px;
@@ -15,4 +14,9 @@
 }
 .work_card {
   padding-bottom: 60px;
+}
+.work_section__text {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
 }

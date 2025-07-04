@@ -1,10 +1,10 @@
 import React from 'react';
 import './LogoSection.css';
-import Behance from '../../images/Behance.jpg';
-import Apple from '../../images/Apple.jpg';
-import Awwwards from '../../images/Awwwards.jpg';
-import Dribbble from '../../images/Dribbble.jpg';
-import Google from '../../images/Google.jpg';
+import logo1 from '../../images/Behance.jpg';
+import logo3 from '../../images/Apple.jpg';
+import logo5 from '../../images/Awwwards.jpg';
+import logo4 from '../../images/Dribbble.jpg';
+import logo2 from '../../images/Google.jpg';
 
 type LogoCardProps = {
   imageUrl: string;
@@ -20,11 +20,11 @@ function CardLogo({ imageUrl }: LogoCardProps) {
 export default function GalleryLogo() {
   return (
     <div className="gallery_logo__list">
-      <CardLogo imageUrl={Behance} />
-      <CardLogo imageUrl={Google} />
-      <CardLogo imageUrl={Apple} />
-      <CardLogo imageUrl={Dribbble} />
-      <CardLogo imageUrl={Awwwards} />
+      <CardLogo imageUrl={logo1} />
+      <CardLogo imageUrl={logo2} />
+      <CardLogo imageUrl={logo3} />
+      <CardLogo imageUrl={logo4} />
+      <CardLogo imageUrl={logo5} />
     </div>
   );
 }

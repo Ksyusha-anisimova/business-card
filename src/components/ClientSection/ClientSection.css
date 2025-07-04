@@ -1,7 +1,6 @@
 .client_card-gallery {
   display: flex;
-  padding: 100px;
-  padding-bottom: 150px;
+  padding-top: 55px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -9,8 +8,25 @@
   display: flex;
 }
 .client_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 1.5px solid rgba(255, 210, 133, 1);
   background-color: rgba(255, 252, 245, 1);
   height: 344px;
   width: 316px;
+  padding: 30px;
+}
+.client_card__text {
+  font-size: 20px;
+  font-weight: 600;
+}
+.client_card__title {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+.client_card-all {
+  padding: 100px;
+  padding-bottom: 150px;
 }

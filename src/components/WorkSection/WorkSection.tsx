@@ -1,11 +1,11 @@
 import React from 'react';
 import './WorkSection.css';
-import WorkCard1 from '../../images/Work_card_1.jpg';
-import WorkCard2 from '../../images/Work_card_2.jpg';
-import WorkCard3 from '../../images/Work_card_3.jpg';
-import WorkCard4 from '../../images/Work_card_4.jpg';
-import WorkCard5 from '../../images/Work_card_5.jpg';
-import WorkCard6 from '../../images/Work_card_6.jpg';
+import workCard1 from '../../images/Work_card_1.jpg';
+import workCard2 from '../../images/Work_card_2.jpg';
+import workCard3 from '../../images/Work_card_3.jpg';
+import workCard4 from '../../images/Work_card_4.jpg';
+import workCard5 from '../../images/Work_card_5.jpg';
+import workCard6 from '../../images/Work_card_6.jpg';
 
 type WorkCardProps = {
   imageUrl: string;
@@ -13,34 +13,34 @@ type WorkCardProps = {
   discription: string;
 };
 
-const WorkCardInfo: WorkCardProps[] = [
+const workCardInfo: WorkCardProps[] = [
   {
-    imageUrl: WorkCard1,
+    imageUrl: workCard1,
     titel: 'Free Bird',
     discription: 'Lynyrd Skynyrd',
   },
   {
-    imageUrl: WorkCard2,
+    imageUrl: workCard2,
     titel: 'Purple Haze',
     discription: 'Jimi Hendrix',
   },
   {
-    imageUrl: WorkCard3,
+    imageUrl: workCard3,
     titel: 'You Really Got Me',
     discription: 'The Kinks',
   },
   {
-    imageUrl: WorkCard4,
+    imageUrl: workCard4,
     titel: 'American Girl',
     discription: 'Tom Petty',
   },
   {
-    imageUrl: WorkCard5,
+    imageUrl: workCard5,
     titel: 'Whole Lotta Love',
     discription: 'Led Zeppelin',
   },
   {
-    imageUrl: WorkCard6,
+    imageUrl: workCard6,
     titel: 'Under Pressure ',
     discription: 'Queen',
   },
@@ -61,10 +61,10 @@ function WorkCard({ imageUrl, titel, discription }: WorkCardProps) {
 
 export default function GalleryWork() {
   return (
-    <div id="work">
-      <span>My latest work</span>
+    <div id="work" className="work_section">
+      <span className="work_section__text">My latest work</span>
       <div className="work_section-gallery">
-        {WorkCardInfo.map((card, index) => (
+        {workCardInfo.map((card, index) => (
           <WorkCard key={index} {...card} />
         ))}
       </div>

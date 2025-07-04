@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import HeaderImage from '../../images/header_image.jpg';
+import header from '../../images/header_image.jpg';
 
 export default function Header() {
   return (
@@ -14,7 +14,7 @@ export default function Header() {
       </div>
 
       <div className="header__image">
-        <img src={HeaderImage} alt="" />
+        <img src={header} alt="" />
       </div>
     </div>
   );

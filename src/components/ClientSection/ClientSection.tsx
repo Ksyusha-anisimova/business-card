@@ -1,10 +1,9 @@
 import React from 'react';
 import '../ClientSection/ClientSection.css';
-import StarUrl from '../../images/Work_card_1.jpg';
-import Author1 from '../../images/Author1.jpg';
-import Author2 from '../../images/Author2.jpg';
-import Author3 from '../../images/Author3.jpg';
-import Star from '../../images/Star.jpg';
+import author1 from '../../images/Author1.jpg';
+import author2 from '../../images/Author2.jpg';
+import author3 from '../../images/Author3.jpg';
+import star from '../../images/Star.jpg';
 
 type ClientInfoProps = {
   star: number;
@@ -14,25 +13,25 @@ type ClientInfoProps = {
   text: string;
 };
 
-const ClientInfo: ClientInfoProps[] = [
+const clientInfo: ClientInfoProps[] = [
   {
     star: 4,
-    starUrl: Star,
-    authorUrl: Author1,
+    starUrl: star,
+    authorUrl: author1,
     discription: 'Gemma Nolen, \n' + 'Google',
     text: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
   },
   {
     star: 3,
-    starUrl: Star,
-    authorUrl: Author2,
+    starUrl: star,
+    authorUrl: author2,
     discription: 'Gemma Nolen, \n' + 'Google',
     text: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
   },
   {
     star: 4,
-    starUrl: Star,
-    authorUrl: Author3,
+    starUrl: star,
+    authorUrl: author3,
     discription: 'Gemma Nolen, \n' + 'Google',
     text: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
   },
@@ -65,7 +64,7 @@ function ClientInfoCard({
 function ClientCard(props: ClientInfoProps) {
   return (
     <div className="client_card">
-      <div>{props.text}</div>
+      <div className="client_card__text">{props.text}</div>
 
       <ClientInfoCard {...props} />
     </div>
@@ -74,10 +73,13 @@ function ClientCard(props: ClientInfoProps) {
 
 export default function GalleryClient() {
   return (
-    <div className="client_card-gallery">
-      {ClientInfo.map((card, index) => (
-        <ClientCard key={index} {...card} />
-      ))}
+    <div className="client_card-all">
+      <p className="client_card__title">Clients</p>
+      <div className="client_card-gallery">
+        {clientInfo.map((card, index) => (
+          <ClientCard key={index} {...card} />
+        ))}
+      </div>
     </div>
   );
 }
