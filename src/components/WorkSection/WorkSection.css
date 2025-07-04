@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 122px 100px 20px 100px;
+  padding: 60px 100px 20px 100px;
 }
 .work_card__titel {
   font-weight: 600;
@@ -19,4 +19,7 @@
   font-size: 32px;
   font-weight: 600;
   text-align: center;
+}
+.work_section {
+  padding-top: 20px;
 }
