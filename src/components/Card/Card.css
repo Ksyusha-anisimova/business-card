@@ -1,0 +1,21 @@
+.skill_card-gallery {
+  display: flex;
+  padding: 180px 140px;
+  gap: 125px;
+}
+.skill_card {
+  text-align: center;
+}
+.skill_card__img {
+  padding-bottom: 56px;
+  height: 130px;
+}
+.skill_card__title {
+  font-size: 28px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.skill_card__discription {
+  font-size: 16px;
+  font-weight: 400;
+}
