@@ -1,6 +1,6 @@
 .work_section-gallery {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 60px 100px 20px 100px;
 }
@@ -22,4 +22,21 @@
 }
 .work_section {
   padding-top: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  .work_section-gallery {
+    flex-direction: column;
+    padding: 40px 30px 40px 30px;
+  }
+  .work_card__image {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .work_section-gallery {
+    justify-content: center;
+    gap: 30px;
+  }
 }

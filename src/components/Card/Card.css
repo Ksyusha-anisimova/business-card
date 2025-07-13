@@ -8,7 +8,9 @@
 }
 .skill_card__img {
   padding-bottom: 56px;
-  height: 130px;
+  /*height: 130px;*/
+  object-fit: contain;
+  width: 100%;
 }
 .skill_card__title {
   font-size: 28px;
@@ -18,4 +20,28 @@
 .skill_card__discription {
   font-size: 16px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 375px) {
+  .skill_card-gallery {
+    flex-direction: column;
+    padding: 150px 63px;
+  }
+  .skill_card__img {
+    object-fit: contain;
+    width: 100%;
+  }
+  .skill_card {
+    /*width: 315px;*/
+  }
+}
+@media screen and (max-width: 768px) {
+  .skill_card-gallery {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 80px 80px;
+    box-sizing: border-box;
+    gap: 100px;
+    justify-content: center;
+  }
 }
