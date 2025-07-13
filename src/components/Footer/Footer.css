@@ -12,11 +12,12 @@
   margin-top: 60px;
 }
 .footer__text {
-  width: 360px;
+  flex: 1;
 }
 .text_fiels-gallery {
-  width: 530px;
-  height: 408px;
+  /*width: 530px;*/
+  /*height: 408px;*/
+  width: 100%;
 }
 .text_fiels input {
   display: flex;
@@ -45,4 +46,23 @@
   height: 80px;
   font-size: 20px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 543px) {
+  .footer {
+    flex-direction: column;
+    box-sizing: border-box;
+    object-fit: contain;
+    padding: 0 30px 70px 30px;
+  }
+  .footer__img-gallery {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    gap: 20px;
+    padding: 70px 80px 70px 80px;
+  }
 }
