@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "main": "src/index.tsx",
-  "homepage": "https://<твой-логин>.github.io/<имя-репозитория>",
+  "homepage": "https://Ksyusha-anisimova.github.io/business-card",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
