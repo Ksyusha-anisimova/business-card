@@ -22,6 +22,27 @@
   font-weight: 400;
 }
 
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.skill_card:hover {
+  animation: shake 0.5s ease-in-out;
+}
+
 @media screen and (max-width: 375px) {
   .skill_card-gallery {
     flex-direction: column;

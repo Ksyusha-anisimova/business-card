@@ -10,7 +10,12 @@
   /*background-color: olivedrab;*/
   border: 0.5px solid gray;
 }
-
+.card_logo__image {
+  transition: transform 0.3s linear;
+}
+.card_logo__image:hover {
+  transform: scale(1.5);
+}
 @media screen and (max-width: 375px) {
   .gallery_logo__list {
     flex-direction: unset;
