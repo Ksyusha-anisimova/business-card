@@ -7,6 +7,7 @@ import GalleryCard from '../Card/Card';
 import GalleryWork from '../WorkSection/WorkSection';
 import GalleryClient from '../ClientSection/ClientSection';
 import Footer from '../Footer/Footer';
+import '../../../public/common.css';
 
 export default function App() {
     return (

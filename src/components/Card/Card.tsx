@@ -13,21 +13,21 @@ type CardProps = {
 const cardInfo: CardProps[] = [
   {
     imageUrl: placeHolder2,
-    title: 'Product design',
+    title: 'Code You Can See',
     discription:
-      'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
+      'I build interfaces where every button and animation feels right. React, TypeScript, HTML, and CSS are my go-to tools.',
   },
   {
     imageUrl: placeHolder3,
-    title: 'Art direction',
+    title: 'Structure and Logic',
     discription:
-      'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
+      'I care about how everything works under the hood — components, routing, state — everything has its place.',
   },
   {
     imageUrl: placeHolder1,
-    title: 'Visual design',
+    title: 'Styling with Character',
     discription:
-      'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
+      'I love fine-tuning details — from colors to spacing. Interfaces should not only be functional, but also visually pleasing.',
   },
 ];
 function Card({ imageUrl, title, discription }: CardProps) {

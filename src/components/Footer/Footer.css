@@ -5,6 +5,10 @@
 }
 .footer__img {
   width: 28px;
+  transition: transform 0.3s linear;
+}
+.footer__img:hover {
+  transform: scale(1.5);
 }
 .footer__img-gallery {
   display: flex;
@@ -15,8 +19,6 @@
   flex: 1;
 }
 .text_fiels-gallery {
-  /*width: 530px;*/
-  /*height: 408px;*/
   width: 100%;
 }
 .text_fiels input {
@@ -48,6 +50,27 @@
   font-weight: 600;
 }
 
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.footer__button:hover {
+  animation: shake 0.5s ease-in-out;
+}
 @media screen and (max-width: 543px) {
   .footer {
     flex-direction: column;
