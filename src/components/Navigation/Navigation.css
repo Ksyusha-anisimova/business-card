@@ -19,6 +19,7 @@
   flex-direction: row;
   gap: 50px;
   font-size: 17px;
+  background-color: transparent;
 }
 
 .navigation_logo {
@@ -31,50 +32,27 @@
 .header__menu-button {
   display: none;
 }
-@media screen and (max-width: 375px) {
-  .navigation_link {
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: -25%;
-    background-color: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s linear;
-    height: 100%;
-    width: 25%;
-    text-align: center;
-    padding-top: 25px;
-    gap: 25px;
-  }
-
-  .navigation_link.active {
-    transform: translateX(100%);
-  }
-
-  .header__menu-button {
-    display: block;
-    margin-left: auto;
-    width: 24px;
-    height: auto;
-    background-color: transparent;
-    padding: 0;
-    border: 0;
-    cursor: pointer;
-    object-fit: contain;
-  }
-  .header__menu-button img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-  }
+.navigation_button {
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-between;*/
+  gap: 20px;
 }
-.header__menu-button {
-  display: none;
+.dark_theme img,
+.light_theme img {
+  width: 32px;
+  height: auto;
+  object-fit: contain;
 }
-@media screen and (max-width: 375px) {
+
+.dark_theme,
+.light_theme {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+@media screen and (max-width: 540px) {
   .navigation_link {
     flex-direction: column;
     position: fixed;

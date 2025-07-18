@@ -1,10 +1,10 @@
 import React from 'react';
 import './LogoSection.css';
-import logo1 from '../../images/Behance.jpg';
-import logo3 from '../../images/Apple.jpg';
-import logo5 from '../../images/Awwwards.jpg';
-import logo4 from '../../images/Dribbble.jpg';
-import logo2 from '../../images/Google.jpg';
+import logo1 from '../../images/typescript.png';
+import logo2 from '../../images/HTML.png';
+import logo3 from '../../images/css.png';
+import logo4 from '../../images/react.png';
+// import logo2 from '../../images/Google.jpg';
 
 type LogoCardProps = {
   imageUrl: string;
@@ -24,7 +24,7 @@ export default function GalleryLogo() {
       <CardLogo imageUrl={logo2} />
       <CardLogo imageUrl={logo3} />
       <CardLogo imageUrl={logo4} />
-      <CardLogo imageUrl={logo5} />
+      {/*<CardLogo imageUrl={logo5} />*/}
     </div>
   );
 }
