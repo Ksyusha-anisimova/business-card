@@ -1,14 +1,43 @@
+<<<<<<< Updated upstream
 import React, { useState } from 'react';
+=======
+import React, { useEffect } from 'react';
+>>>>>>> Stashed changes
 import './Navigation.css';
 import menuButton from '../../images/header__menu-button.png';
-import lightTheme from '../../images/lightTheme.png';
-import darkTheme from '../../images/darkTheme.png';
+import DarkThemeIcon from '../../images/moon.svg?react';
+import LightThemeIcon from '../../images/sun.svg?react';
+import Burger from '../../images/burger.svg?react';
+import Cross from '../../images/cross.svg?react';
+
 import { useTheme } from '../../hooks/useTheme';
+<<<<<<< Updated upstream
+=======
+import { useState } from 'react';
+import { useRef } from 'react';
+>>>>>>> Stashed changes
 
 export default function Navigation() {
   const [isOpen, setOpen] = useState(false);
 
   const [theme, setTheme] = useTheme();
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutSide = (event: MouseEvent) => {
+      if (
+        menuRef.current &&
+        event.target instanceof Node &&
+        !menuRef.current.contains(event.target)
+      ) {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutSide);
+    return () => document.removeEventListener('mousedown', handleClickOutSide);
+  });
+
   return (
     <>
       <nav className="navigation__list">
@@ -17,7 +46,10 @@ export default function Navigation() {
         </a>
 
         <div className="navigation_button">
-          <div className={`navigation_link ${isOpen ? 'active' : ''}`}>
+          <div
+            className={`navigation_link ${isOpen ? 'active' : ''}`}
+            ref={menuRef}
+          >
             <a href="#about">About</a>
             <a href="#work">Work</a>
             <a href="#contact">Contact</a>
@@ -27,7 +59,13 @@ export default function Navigation() {
             className="header__menu-button"
             onClick={() => setOpen(!isOpen)}
           >
-            <img src={menuButton} alt="" />
+            {isOpen ? (
+              <Cross />
+            ) : (
+              // <Burger className={`burger ${isOpen ? '' : 'visible'}`} />
+              <Burger />
+            )}
+            {/*<img src={menuButton} alt="" />*/}
           </button>
 
           <button
@@ -35,14 +73,15 @@ export default function Navigation() {
             className="dark_theme"
             onClick={() => setTheme('dark')}
           >
-            <img src={darkTheme} alt="" />
+            <DarkThemeIcon />
           </button>
           <button
             id="light-theme"
             className="light_theme"
             onClick={() => setTheme('light')}
           >
-            <img src={lightTheme} alt="" />
+            {/*<img src={lightTheme} alt="" />*/}
+            <LightThemeIcon />
           </button>
         </div>
       </nav>

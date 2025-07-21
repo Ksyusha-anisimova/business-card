@@ -2,7 +2,7 @@
   "name": "untitled1",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
+
   "main": "src/index.tsx",
   "homepage": "https://Ksyusha-anisimova.github.io/business-card",
   "scripts": {
@@ -12,8 +12,9 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "format": "prettier --write .",
-    "dev": "webpack serve --config webpack.config.js --mode development",
-    "build": "webpack --config webpack.config.js --mode production"
+    "dev": "webpack serve --config webpack.config.cjs --mode development",
+    "build": "webpack --config webpack.config.cjs --mode production"
+
   },
   "private": true,
   "dependencies": {
@@ -26,6 +27,7 @@
     "@babel/preset-react": "^7.27.1",
     "@babel/preset-typescript": "^7.27.1",
     "@eslint/js": "^9.29.0",
+    "@svgr/webpack": "^8.1.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@typescript-eslint/eslint-plugin": "^8.34.1",

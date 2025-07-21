@@ -58,15 +58,12 @@ body {
 }
 .navigation__list {
   background-color: var(--navigation-color-bg);
-  color: #020202;
+  color: var(--comon-text);
 }
 .navigation__list a {
-  color: #020202;
+  color: var(--comon-text);
   background-color: transparent;
 }
-/*.navigation_link {*/
-/*  background-color: var(--navigation-color-bg);*/
-/*}*/
 .work_card__titel {
   color: var(--comon-text);
 }
@@ -85,7 +82,19 @@ img.card_logo__image {
 }
 .client_card {
   background-color: var(--clients-card-bg);
-  color: #020202;
+  color: var(--comon-text);
 }
-/*}*/
->>>>>>> Stashed changes
+.dark_theme,
+.light_theme {
+  color: var(--comon-text);
+}
+.header__menu-button {
+  color: var(--comon-text);
+}
+.navigation_link.active {
+  background-color: var(--navigation-color-bg);
+  color: var(--comon-text);
+}
+.card_logo__image {
+  color: var(--comon-text);
+}
