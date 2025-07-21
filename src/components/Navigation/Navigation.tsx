@@ -32,6 +32,19 @@ export default function Navigation() {
     return () => document.removeEventListener('mousedown', handleClickOutSide);
   });
 
+  useEffect(() => {
+    const handleAnchorClick = () => {
+      setOpen(false);
+    };
+    const anchors = document.querySelectorAll('a[href^="#"]');
+    anchors.forEach((anchor) =>
+      anchor.addEventListener('click', handleAnchorClick)
+    );
+    return () =>
+      anchors.forEach((anchor) =>
+        anchor.addEventListener('click', handleAnchorClick)
+      );
+  }, []);
   return (
     <>
       <nav className="navigation__list">
