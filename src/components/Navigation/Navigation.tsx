@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-import React, { useState } from 'react';
-=======
 import React, { useEffect } from 'react';
->>>>>>> Stashed changes
 import './Navigation.css';
 import menuButton from '../../images/header__menu-button.png';
 import DarkThemeIcon from '../../images/moon.svg?react';
@@ -11,17 +7,15 @@ import Burger from '../../images/burger.svg?react';
 import Cross from '../../images/cross.svg?react';
 
 import { useTheme } from '../../hooks/useTheme';
-<<<<<<< Updated upstream
-=======
+
 import { useState } from 'react';
 import { useRef } from 'react';
->>>>>>> Stashed changes
 
 export default function Navigation() {
   const [isOpen, setOpen] = useState(false);
 
   const [theme, setTheme] = useTheme();
-  const menuRef = useRef(null);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutSide = (event: MouseEvent) => {
