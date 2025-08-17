@@ -49,7 +49,7 @@ export default function Navigation() {
     <>
       <nav className="navigation__list">
         <a href="#" className="navigation_logo">
-          Logo
+          ksuanima
         </a>
 
         <div className="navigation_button">
