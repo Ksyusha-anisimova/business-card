@@ -1,6 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .gallery_logo__list {
@@ -8,17 +8,19 @@
   padding: 60px 100px;
   justify-content: space-between;
   border: 0.5px solid gray;
+  /*width: 60px;*/
+  gap: 30px;
 }
 .card_logo__image {
   transition: transform 0.3s linear;
   object-fit: contain;
 }
 .card_logo__image:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
-.card_logo__image img {
+.card_logo__image {
   width: 100%;
-  max-width: 100px;
+  max-width: 80px;
 }
 @media screen and (max-width: 375px) {
   .gallery_logo__list {
@@ -28,6 +30,12 @@
     justify-content: space-around;
     gap: 30px;
   }
+  .card_logo__image {
+    max-width: 50px;
+  }
+  .card_logo__image:hover {
+    transform: scale(1.2);
+  }
 }
 @media screen and (max-width: 760px) {
   .gallery_logo__list {
@@ -36,6 +44,9 @@
     padding: 0 66px;
     justify-content: space-around;
     gap: 30px;
+  }
+  .card_logo__image {
+    max-width: 70px;
   }
 }
 @media screen and (max-width: 768px) {

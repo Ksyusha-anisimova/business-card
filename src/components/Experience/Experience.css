@@ -1,0 +1,116 @@
+/*.client_card-gallery {*/
+/*  display: flex;*/
+/*  padding-top: 55px;*/
+/*  gap: 30px;*/
+/*  justify-content: space-around;*/
+/*  flex-wrap: wrap;*/
+/*}*/
+/*.client_card-info {*/
+/*  display: flex;*/
+/*}*/
+/*.client_card {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: space-between;*/
+/*  border: 1.5px solid rgba(255, 210, 133, 1);*/
+/*  background-color: rgba(255, 252, 245, 1);*/
+/*  height: 344px;*/
+
+/*  width: 316px;*/
+/*  padding: 30px;*/
+/*  box-sizing: border-box;*/
+/*}*/
+/*.client_card__text {*/
+/*  font-size: 20px;*/
+/*  font-weight: 600;*/
+/*}*/
+/*.client_card__title {*/
+/*  font-size: 32px;*/
+/*  font-weight: 600;*/
+/*  text-align: center;*/
+/*}*/
+/*.client_card-all {*/
+/*  padding: 100px;*/
+/*  padding-bottom: 150px;*/
+/*}*/
+.experience_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*border: 1.5px solid rgba(255, 210, 133, 1);*/
+  background-color: var(--common-bg-color);
+  /*height: 344px;*/
+
+  /*width: 316px;*/
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+}
+p {
+  display: flex;
+  font-size: 28px;
+  font-weight: 600;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.text_main, .text_data{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.experience_all {
+  padding: 100px;
+  padding-bottom: 150px;
+}
+
+.experience_gallery {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.experience_logo .logo-bg {
+  fill: var(--common-bg-color);
+}
+.experience_logo .logo-text {
+  fill: var(--comon-text);
+}
+.experience_logo .logo-box {
+  stroke: var(--comon-text);
+  fill: none;
+}
+.experience_logo {
+  max-width: 300px;
+  /*max-width: 240px;*/
+  height: auto;
+}
+@media screen and (max-width: 375px) {
+  .experience_all {
+    padding: 30px;
+  }
+  /*.client_card-gallery {*/
+  /*  flex-direction: column;*/
+  /*  align-items: center;*/
+  /*}*/
+  /*  .client_card-all {*/
+  /*    padding: 60px 30px 90px 30px;*/
+  /*  }*/
+  /*  .client_card {*/
+  /*    width: 100%;*/
+  /*    max-width: 315px;*/
+  /*    object-fit: contain;*/
+  /*    margin: 0 auto;*/
+  /*  }*/
+  /*  .client_card:not(:last-child) {*/
+  /*    margin-bottom: 60px;*/
+  /*  }*/
+}
+
+@media screen and (max-width: 768px) {
+  .experience_gallery {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+}

@@ -1,0 +1,43 @@
+
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <defs>
+        <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#9BE7FF"/>
+            <stop offset="100%" stop-color="#8EA5FF"/>
+        </linearGradient>
+    </defs>
+
+
+    <path d="M -50 400 C 200 340, 400 460, 600 340 S 1000 460, 1250 400"
+          fill="none" stroke="url(#g1)" stroke-width="1.2" opacity="0.35"/>
+    <path d="M -50 300
+         C 200 300, 400 420, 600 360
+         S 1000 500, 1250 420"
+          fill="none" stroke="url(#g1)" stroke-width="1.2" opacity="0.35"/>
+    <path d="M -20 600
+         C 200 300, 400 420, 300 300
+         S 1000 500, 1250 420"
+          fill="none" stroke="url(#g1)" stroke-width="1.2" opacity="0.35"/>
+    <path d="M -10 450
+         C 200 300, 400 420, 700 340
+         S 1000 500, 1250 420"
+          fill="none" stroke="url(#g1)" stroke-width="1.2" opacity="0.35"/>
+
+
+
+
+    <path d="M -70 100 C 200 340, 400 460, 300 290 S 1000 460, 1250 400"
+          fill="none" stroke="url(#g1)" stroke-width="1.2" opacity="0.35"/>
+    <path d="M -10 100
+         C 200 300, 400 420, 400 290
+         S 1000 500, 1250 420"
+          fill="none" stroke="url(#g1)" stroke-width="1.2" opacity="0.35"/>
+    <path d="M -450 700
+         C 200 300, 400 420, 300 300
+         S 1000 500, 1250 120"
+          fill="none" stroke="url(#g1)" stroke-width="1.2" opacity="0.35"/>
+    <path d="M -90 650
+         C 200 300, 400 420, 500 340
+         S 1000 500, 1250 420"
+          fill="none" stroke="url(#g1)" stroke-width="1.2" opacity="0.35"/>
+</svg>

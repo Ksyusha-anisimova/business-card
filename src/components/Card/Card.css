@@ -2,13 +2,22 @@
   display: flex;
   padding: 180px 140px;
   gap: 125px;
+  justify-content: space-between;
 }
 .skill_card {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .skill_card__img {
   padding-bottom: 56px;
   object-fit: contain;
+  width: 100%;
+}
+.skill_card__img img {
+  /*max-width: 300px;*/
+  object-fit: cover;
+  display: block;
   width: 100%;
 }
 .skill_card__title {
@@ -55,13 +64,12 @@
     /*width: 315px;*/
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 995px) {
   .skill_card-gallery {
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 80px 80px;
-    box-sizing: border-box;
-    gap: 100px;
-    justify-content: center;
+    display: flex;
+    padding: 180px 140px;
+    gap: 125px;
+    justify-content: space-between;
+    flex-direction: column;
   }
 }

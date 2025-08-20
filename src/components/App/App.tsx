@@ -5,20 +5,20 @@ import Header from '../Header/Header';
 import GalleryLogo from '../LogoSection/LogoSection';
 import GalleryCard from '../Card/Card';
 import GalleryWork from '../WorkSection/WorkSection';
-import GalleryClient from '../ClientSection/ClientSection';
+import GalleryExperience from '../Experience/Experience';
 import Footer from '../Footer/Footer';
 import '../../../public/common.css';
 
 export default function App() {
-    return (
-        <>
-            <Navigation />
-            <Header />
-            <GalleryLogo />
-            <GalleryCard />
-            <GalleryWork />
-            <GalleryClient />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Navigation />
+      <Header />
+      <GalleryLogo />
+      <GalleryCard />
+      <GalleryWork />
+      <GalleryExperience />
+      <Footer />
+    </>
+  );
 }

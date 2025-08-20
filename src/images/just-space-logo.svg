@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 240 78" role="img"  class="experience_logo " aria-label="JUST SPACE logo">
+  <!-- Фон -->
+  <rect width="240" height="78" fill="var(--common-bg-color)"/>
+
+  <!-- JUST -->
+  <text x="24" y="39" fill="var(--comon-text)"
+        font-family="Montserrat, Helvetica, Arial, sans-serif"
+        font-size="24"
+        letter-spacing="0.18em"
+        dominant-baseline="middle">
+    JUST
+  </text>
+
+  <!-- SPACE с рамкой -->
+  <rect x="106" y="19" width="108" height="40" fill="none" stroke="var(--comon-text)" stroke-width="2"/>
+  <text x="112" y="39" fill="var(--comon-text)"
+        font-family="Montserrat, Helvetica, Arial, sans-serif"
+        font-size="24"
+        letter-spacing="0.18em"
+        dominant-baseline="middle">
+    SPACE
+  </text>
+</svg>

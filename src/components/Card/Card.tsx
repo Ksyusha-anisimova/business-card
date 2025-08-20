@@ -1,8 +1,8 @@
 import React from 'react';
 import './Card.css';
-import placeHolder1 from '../../images/Image_placeholder.jpg';
-import placeHolder2 from '../../images/Image_placeholder_1.jpg';
-import placeHolder3 from '../../images/Image_placeholder_2.jpg';
+import placeHolder1 from '../../images/code.png';
+import placeHolder2 from '../../images/Structure_and_Logic.png';
+import placeHolder3 from '../../images/web_disign.png';
 
 type CardProps = {
   imageUrl: string;
@@ -12,19 +12,19 @@ type CardProps = {
 
 const cardInfo: CardProps[] = [
   {
-    imageUrl: placeHolder2,
+    imageUrl: placeHolder1,
     title: 'Code You Can See',
     discription:
       'I build interfaces where every button and animation feels right. React, TypeScript, HTML, and CSS are my go-to tools.',
   },
   {
-    imageUrl: placeHolder3,
+    imageUrl: placeHolder2,
     title: 'Structure and Logic',
     discription:
       'I care about how everything works under the hood — components, routing, state — everything has its place.',
   },
   {
-    imageUrl: placeHolder1,
+    imageUrl: placeHolder3,
     title: 'Styling with Character',
     discription:
       'I love fine-tuning details — from colors to spacing. Interfaces should not only be functional, but also visually pleasing.',
